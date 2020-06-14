@@ -1,10 +1,19 @@
 :host {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 650px;
+    height: 100%;
     
-    img {
+    #logo {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+    }
+
+    #presentation {
         width: 100%;
         height: 100%;
     }
@@ -12,9 +21,7 @@
     .btn.right {
         right: 50px;
         position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        top: 45%;
         background-color: #555;
         color: white;
         font-size: 16px;
@@ -31,9 +38,7 @@
     .btn.left {
         left: 50px;
         position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        top: 45%;
         background-color: #555;
         color: white;
         font-size: 16px;
