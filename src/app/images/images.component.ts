@@ -10,7 +10,9 @@ export class ImagesComponent implements OnInit {
   images: any[] = ["../../assets/pics/1.jpg","../../assets/pics/2.jpg","../../assets/pics/3.jpg"];
   currentImage: number = 0;
 
-  constructor() { }
+  constructor() { 
+   
+  }
 
   ngOnInit(): void {
     
@@ -27,4 +29,21 @@ export class ImagesComponent implements OnInit {
       this.currentImage++;
     }
   }
+
+  skip() {
+    if (this.currentImage < this.images.length - 1) {
+      this.currentImage = this.images.length - 1;
+    }
+  }
+
+  isLastPicture() {
+    if (this.currentImage === this.images.length - 1)
+    {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
 }
