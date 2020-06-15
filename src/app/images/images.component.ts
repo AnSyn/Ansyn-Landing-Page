@@ -46,4 +46,14 @@ export class ImagesComponent implements OnInit {
     }
   }
 
+  isFirstPicture() {
+    if (this.currentImage === 0)
+    {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
 }

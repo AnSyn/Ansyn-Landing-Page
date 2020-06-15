@@ -5,6 +5,6 @@
     </a>
 </p>
 <img id="presentation" src={{images[currentImage]}}>
-<button class="btn left" (click)="nextImage()"> << </button>
-<button class="btn right" (click)="previousImage()"> >> </button>
+<button *ngIf="!isLastPicture()" class="btn left" (click)="nextImage()"> << </button>
+<button *ngIf="!isFirstPicture()" class="btn right" (click)="previousImage()"> >> </button>
 <button *ngIf="!isLastPicture()" class="btn skip" (click)="skip()">דלג לסוף</button>
