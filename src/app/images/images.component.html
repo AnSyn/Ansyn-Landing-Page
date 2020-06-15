@@ -1,5 +1,5 @@
 
-<p>
+<p *ngIf="isLastPicture()">
     <a href="http://platform.ansyn.io:81/#/">
         <img id="logo" src="..\..\assets\logo.svg">
     </a>
@@ -7,3 +7,4 @@
 <img id="presentation" src={{images[currentImage]}}>
 <button class="btn left" (click)="nextImage()"> << </button>
 <button class="btn right" (click)="previousImage()"> >> </button>
+<button *ngIf="!isLastPicture()" class="btn skip" (click)="skip()">דלג לסוף</button>
