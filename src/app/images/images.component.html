@@ -15,3 +15,14 @@
     <img src="../../assets/pics/previous-track.png">
     <span>דלג לסוף</span>
 </div>
+
+<div class="slider">
+    <img *ngIf="indicatorThree()"  src="../../assets/pics/line.png" (click)="currentImage = 2"/>
+    <img *ngIf="!indicatorThree()"  src="../../assets/pics/minus.png" (click)="currentImage = 2"/>
+
+    <img *ngIf="indicatorTwo()"  src="../../assets/pics/line.png" (click)="currentImage = 1"/>
+    <img *ngIf="!indicatorTwo()"  src="../../assets/pics/minus.png" (click)="currentImage = 1"/>
+
+    <img *ngIf="indicatorOne()"  src="../../assets/pics/line.png" (click)="currentImage = 0"/>
+    <img *ngIf="!indicatorOne()"  src="../../assets/pics/minus.png" (click)="currentImage = 0"/>
+</div>
