@@ -4,7 +4,7 @@
         <img id="logo" src="..\..\assets\logo.svg">
     </a>
 </p>
-<img id="presentation" src={{images[currentImage]}}>
+<img @fade id="presentation" src={{images[currentImage]}}>
 <div *ngIf="!isLastPicture()" class="left" (click)="nextImage()">
     <img src="../../assets/pics/back.png">
 </div>
