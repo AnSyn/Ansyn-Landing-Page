@@ -10,12 +10,31 @@ export class ImagesComponent implements OnInit {
   images: any[] = ["../../assets/pics/1.jpg","../../assets/pics/2.jpg","../../assets/pics/3.jpg"];
   currentImage: number = 0;
 
-  constructor() { 
-   
+  indicatorOne() {
+    if(this.currentImage === 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 
-  ngOnInit(): void {
-    
+  indicatorTwo() {
+    if(this.currentImage === 1) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  indicatorThree() {
+    if(this.currentImage === 2) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
 
   previousImage() {
@@ -56,4 +75,7 @@ export class ImagesComponent implements OnInit {
     }
   }
 
+  ngOnInit(): void {
+    
+  }
 }
