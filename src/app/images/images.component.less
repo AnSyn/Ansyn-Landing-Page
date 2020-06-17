@@ -92,18 +92,36 @@
         }
     }
 
-    div.slider {
+    div.carousel-indicators {
         display: flex;
         align-items: center;
         justify-content: center;
-        bottom: 50px;
+        bottom: 100px;
         position: absolute;
-
-        img {
+        direction: rtl;
+    
+        span {
             margin: 10px;
             width: 40px;
             height: 40px;
-
+    
+            background-repeat: round;
+            background-image: url(../../assets/pics/line.png);
+    
+            &:hover {
+                cursor: pointer;
+                height: 41px;
+            }
+        }
+    
+        span.active {
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+    
+            background-repeat: round;
+            background-image: url(../../assets/pics/minus.png);
+    
             &:hover {
                 cursor: pointer;
                 height: 41px;
